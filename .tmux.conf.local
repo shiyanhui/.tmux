@@ -282,8 +282,8 @@ tmux_conf_copy_to_os_clipboard=false
 
 # force Vi mode
 #   really you should export VISUAL or EDITOR environment variable, see manual
-#set -g status-keys vi
-#set -g mode-keys vi
+set -g status-keys vi
+set -g mode-keys vi
 
 # replace C-b by C-a instead of using both prefixes
 # set -gu prefix2
@@ -295,10 +295,10 @@ tmux_conf_copy_to_os_clipboard=false
 # move status line to top
 #set -g status-position top
 
-bind-key -Tcopy-mode-vi 'v' send -X begin-selection
-bind-key -Tcopy-mode-vi 'y' send -X copy-pipe-and-cancel "reattach-to-user-namespace pbcopy"
-bind-key -Tcopy-mode-vi Escape send -X cancel
-bind-key -Tcopy-mode-vi V send -X rectangle-toggle
+bind-key -T copy-mode-vi 'v' send -X begin-selection
+bind-key -T copy-mode-vi 'y' send -X copy-pipe-and-cancel "reattach-to-user-namespace pbcopy"
+bind-key -T copy-mode-vi Escape send -X cancel
+bind-key -T copy-mode-vi V send -X rectangle-toggle
 
 set-option -g prefix C-a
 unbind-key C-b
