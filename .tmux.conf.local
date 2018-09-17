@@ -275,7 +275,7 @@ tmux_conf_copy_to_os_clipboard=false
 # this is the place to override or undo settings
 
 # increase history size
-#set -g history-limit 10000
+set -g history-limit 1000000
 
 # start with mouse mode enabled
 #set -g mouse on
@@ -284,14 +284,13 @@ tmux_conf_copy_to_os_clipboard=false
 #   really you should export VISUAL or EDITOR environment variable, see manual
 set -g status-keys vi
 set -g mode-keys vi
-set -g history-limit 100000
 
 # replace C-b by C-a instead of using both prefixes
-# set -gu prefix2
-# unbind C-a
-# unbind C-b
-# set -g prefix C-a
-# bind C-a send-prefix
+set -gu prefix2
+unbind C-a
+unbind C-b
+set -g prefix C-a
+bind C-a send-prefix
 
 # move status line to top
 #set -g status-position top
@@ -300,13 +299,6 @@ bind-key -T copy-mode-vi 'v' send -X begin-selection
 bind-key -T copy-mode-vi 'y' send -X copy-pipe-and-cancel "reattach-to-user-namespace pbcopy"
 bind-key -T copy-mode-vi Escape send -X cancel
 bind-key -T copy-mode-vi V send -X rectangle-toggle
-
-set-option -g prefix C-a
-unbind-key C-b
-bind-key C-a send-prefix
-
-# for vim-tmux-navigator
-bind C-l send-keys 'C-l'
 
 #=======================================================================
 # Display
@@ -340,9 +332,4 @@ tmux_conf_battery_status_discharging='🔋'
 # Plugins
 #=======================================================================
 
-set -g @plugin 'tmux-plugins/tpm'
-set -g @plugin 'tmux-plugins/tmux-sensible'
-set -g @plugin 'tmux-plugins/tmux-resurrect'
-set -g @plugin 'tmux-plugins/tmux-copycat'
-
-run '~/.tmux/plugins/tpm/tpm'
+run-shell ~/.tmux/plugins/tmux-resurrect/resurrect.tmux
