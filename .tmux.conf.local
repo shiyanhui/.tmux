@@ -376,6 +376,7 @@ tmux_conf_copy_to_os_clipboard=false
 # Custom Config
 #=======================================================================
 
+# replace C-b by C-a instead of using both prefixes
 set -gu prefix2
 unbind C-a
 unbind C-b
