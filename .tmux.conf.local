@@ -402,6 +402,11 @@ custom_bg='#282828'
 custom_fg='#fbf1c7'
 custom_gray="#928374"
 
+# solarized
+custom_bg='#002b36'
+custom_fg='#fdf6e3'
+custom_gray="#8a8a8a"
+
 tmux_conf_new_window_retain_current_path=true
 
 tmux_conf_theme_status_bg=$custom_bg
