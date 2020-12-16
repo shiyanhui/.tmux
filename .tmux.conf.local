@@ -397,10 +397,25 @@ tmux_conf_copy_to_os_clipboard=true
 # Display
 #=======================================================================
 
+# srcery
+# custom_bg='#1c1b19'
+# custom_fg='#c0c7ca'
+# custom_gray="#797E80"
+
+# oceanicnext
+# custom_bg='#1b2b34'
+# custom_fg='#c0c7ca'
+# custom_gray="#797E80"
+
+# elly
+# custom_bg='#111a1f'
+# custom_fg='#c0c7ca'
+# custom_gray="#797E80"
+
 # gruvbox
-custom_bg='#282828'
-custom_fg='#fbf1c7'
-custom_gray="#928374"
+# custom_bg='#282828'
+# custom_fg='#fbf1c7'
+# custom_gray="#928374"
 
 # solarized
 custom_bg='#002b36'
