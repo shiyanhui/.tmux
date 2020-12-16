@@ -1,5 +1,0 @@
-pane	1	1	:zsh	1	:*	1	:/Users/lime/workspace	1	zsh	:
-pane	workspace	1	:zsh	1	:*	1	:/Users/lime/workspace	1	zsh	:
-window	1	1	1	:*	cdde,212x58,0,0,1
-window	workspace	1	1	:*	cddd,212x58,0,0,0
-state	workspace	1

@@ -1,8 +1,0 @@
-pane	datasource	1	:zsh	1	:*	1	:/Users/lime/workspace/go/src/gitlab.qiyi.domain/tv/service-datasource	1	vim	:vim
-pane	practice	1	:zsh	1	:*	1	:/Users/lime/workspace/Practice	1	zsh	:
-pane	workspace	1	:zsh	1	:*Z	1	:/Users/lime/workspace/os_kernel_lab/labcodes/lab4	1	vim	:vim
-pane	workspace	1	:zsh	1	:*Z	2	:/Users/lime/workspace/os_kernel_lab/labcodes/lab4	0	zsh	:
-window	datasource	1	1	:*	cdde,212x58,0,0,1
-window	practice	1	1	:*	cde2,212x58,0,0,5
-window	workspace	1	1	:*Z	ac30,212x58,0,0[212x29,0,0,2,212x28,0,30,3]
-state	practice	workspace

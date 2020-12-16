@@ -1,8 +1,0 @@
-pane	datasource	1	:zsh	1	:*Z	1	:/Users/lime/workspace/go/src/gitlab.qiyi.domain/tv/pkg/epginfo/schema	1	zsh	:
-pane	datasource	1	:zsh	1	:*Z	2	:/Users/lime/workspace/go/src/gitlab.qiyi.domain/tv/pkg/epginfo/schema	0	zsh	:
-pane	practice	1	:zsh	1	:*	1	:/Users/lime/workspace/Practice	1	zsh	:
-pane	workspace	1	:zsh	1	:*	1	:/Users/lime/workspace/os_kernel_lab	1	zsh	:
-window	datasource	1	1	:*Z	ac2f,212x58,0,0[212x29,0,0,1,212x28,0,30,5]
-window	practice	1	1	:*	cddf,212x58,0,0,2
-window	workspace	1	1	:*	cde1,212x58,0,0,4
-state	datasource	workspace

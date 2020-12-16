@@ -1,5 +1,0 @@
-pane	datasource	1	:zsh	1	:*	1	:/Users/lime/workspace/go/src/gitlab.qiyi.domain/tv/service-datasource	1	zsh	:
-pane	workspace	1	:zsh	1	:*	1	:/Users/lime/workspace/GotoGoogle	1	zsh	:
-window	datasource	1	1	:*	cdde,212x58,0,0,1
-window	workspace	1	1	:*	cddf,212x58,0,0,2
-state	datasource	workspace
