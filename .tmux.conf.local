@@ -397,48 +397,23 @@ tmux_conf_copy_to_os_clipboard=true
 # Display
 #=======================================================================
 
-# colorscheme: solarized
-custom_bg='#002b36'
-custom_fg='#fdf6e3'
-custom_gray="#8a8a8a"
-
-# colorscheme: elly
-# custom_bg='#111a1f'
-# custom_fg='#c0c7ca'
-# custom_gray="#797E80"
-
-# colorscheme: gruvbox
-# custom_bg='#282828'
-# custom_fg='#fbf1c7'
-# custom_gray="#928374"
-
-# colorscheme: srcery
-# custom_bg='#1c1b19'
-# custom_fg='#c0c7ca'
-# custom_gray="#797E80"
-
-# colorscheme: oceanicnext
-# custom_bg='#1b2b34'
-# custom_fg='#c0c7ca'
-# custom_gray="#797E80"
-
 tmux_conf_new_window_retain_current_path=true
 
-tmux_conf_theme_status_bg=$custom_bg
-tmux_conf_theme_window_status_bg=$custom_bg
-
-tmux_conf_theme_window_status_current_fg=$custom_fg
-tmux_conf_theme_window_status_current_bg=$custom_bg
-
-tmux_conf_theme_window_status_last_fg=$custom_gray
-tmux_conf_theme_window_status_last_bg=$custom_bg
-
+tmux_conf_theme_status_bg=default
 tmux_conf_theme_status_left=' ❐ #S '
-tmux_conf_theme_status_left_fg=$custom_gray','$custom_gray','$custom_gray
-tmux_conf_theme_status_left_bg=$custom_bg','$custom_bg','$custom_bg
+tmux_conf_theme_status_left_fg=default,default,default
+tmux_conf_theme_status_left_bg=default,default,default
+tmux_conf_theme_status_right_fg=default,default,default
+tmux_conf_theme_status_right_bg=default,default,default
 
-tmux_conf_theme_status_right_fg=$custom_gray','$custom_gray','$custom_gray
-tmux_conf_theme_status_right_bg=$custom_bg','$custom_bg','$custom_bg
+tmux_conf_theme_window_status_fg=default
+tmux_conf_theme_window_status_bg=default
+tmux_conf_theme_window_status_current_fg="#fdf6e3"
+tmux_conf_theme_window_status_current_bg=default
+tmux_conf_theme_window_status_last_fg=default
+tmux_conf_theme_window_status_last_bg=default
+tmux_conf_theme_window_status_activity_fg=default
+tmux_conf_theme_window_status_bell_fg=default
 
 tmux_conf_theme_left_separator_sub=''
 tmux_conf_theme_right_separator_sub=''
