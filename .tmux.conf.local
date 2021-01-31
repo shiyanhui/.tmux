@@ -393,6 +393,9 @@ set -g history-limit 999999999
 # copy to clipboard when yank
 tmux_conf_copy_to_os_clipboard=true
 
+# set italic
+set -g default-terminal "tmux-256color"
+
 #=======================================================================
 # Display
 #=======================================================================
