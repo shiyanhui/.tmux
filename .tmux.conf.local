@@ -441,6 +441,18 @@ tmux_conf_copy_to_os_clipboard=true
 # set italic
 set -g default-terminal "tmux-256color"
 
+# reset display-panes shortcut
+unbind q
+unbind o
+bind o display-panes
+set -g display-panes-time 5000
+
+unbind n
+bind n select-pane -t +
+
+# order the sessions by name
+bind s choose-tree -s -O name
+
 #=======================================================================
 # Display
 #=======================================================================
