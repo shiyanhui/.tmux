@@ -73,6 +73,26 @@ tmux_conf_theme_colour_15="#080808"   # dark gray
 tmux_conf_theme_colour_16="#d70000"   # red
 tmux_conf_theme_colour_17="#e4e4e4"   # white
 
+#a3be8c green
+#ebcb8b orange
+#88c0d0 cyan
+#c8d0e0 white
+
+# custom theme
+tmux_conf_theme_colour_1="#353b49"
+tmux_conf_theme_colour_2="#353b49"
+tmux_conf_theme_colour_3="#c8d0e0"
+tmux_conf_theme_colour_4="#ebcb8b" # tab
+tmux_conf_theme_colour_5="#ebcb8b"
+tmux_conf_theme_colour_6="#2e3440"
+tmux_conf_theme_colour_8="#353b49"
+tmux_conf_theme_colour_9="#88c0d0" # session
+tmux_conf_theme_colour_12="#c8d0e0"
+tmux_conf_theme_colour_13="#2e3440"
+tmux_conf_theme_colour_14="#353b49"
+tmux_conf_theme_colour_15="#353b49"
+tmux_conf_theme_colour_16="#88c0d0"
+
 # default theme (ansi)
 #tmux_conf_theme_colour_1="colour0"
 #tmux_conf_theme_colour_2="colour8"
@@ -472,29 +492,20 @@ bind s choose-tree -s -O name
 
 tmux_conf_new_window_retain_current_path=true
 
-tmux_conf_theme_status_bg=default
-tmux_conf_theme_status_left=' ❐ #S '
-tmux_conf_theme_status_left_fg=default,default,default
-tmux_conf_theme_status_left_bg=default,default,default
-tmux_conf_theme_status_right_fg=default,default,default
-tmux_conf_theme_status_right_bg=default,default,default
+tmux_conf_theme_window_status_last_fg="default"
+tmux_conf_theme_window_status_last_bg="default"
 
-tmux_conf_theme_window_status_fg=default
-tmux_conf_theme_window_status_bg=default
-tmux_conf_theme_window_status_current_fg="#fdf6e3"
-tmux_conf_theme_window_status_current_bg=default
-tmux_conf_theme_window_status_last_fg=default
-tmux_conf_theme_window_status_last_bg=default
-tmux_conf_theme_window_status_activity_fg=default
-tmux_conf_theme_window_status_bell_fg=default
-
-tmux_conf_theme_left_separator_sub=''
-tmux_conf_theme_right_separator_sub=''
+tmux_conf_theme_left_separator_main='\uE0B0'
+tmux_conf_theme_left_separator_sub='\uE0B1'
+tmux_conf_theme_right_separator_main='\uE0B2'
+tmux_conf_theme_right_separator_sub='\uE0B3'
 
 tmux_conf_battery_status_charging='⚡'
 tmux_conf_battery_status_discharging='🔋'
 
-tmux_conf_theme_status_right=" #{prefix}#{pairing}#{synchronized}#{?battery_status,#{battery_status},}#{?battery_bar, #{battery_bar},}#{?battery_percentage, #{battery_percentage},} , %R , %d %b | #{username}#{root} | #{hostname} "
+tmux_conf_theme_status_left=" ❐ #S "
+tmux_conf_theme_status_right=" #{prefix}#{mouse}#{pairing}#{synchronized}#{?battery_status,#{battery_status},}#{?battery_bar, #{battery_bar},}#{?battery_percentage, #{battery_percentage},} , %R , %d %b | #{hostname} "
+tmux_conf_theme_status_right_attr="none,bold,none"
 
 #=======================================================================
 # Plugins
