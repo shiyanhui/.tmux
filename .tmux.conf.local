@@ -499,16 +499,17 @@ bind s choose-tree -s -O name
 
 set -g @plugin 'tmux-plugins/tmux-resurrect'
 set -g @plugin 'shiyanhui/tmux-cpu'
+set -g @plugin 'shiyanhui/tmux-network-bandwidth'
 
 set -g status-interval 1
-set -g @cpu_percentage_format "%.0f%%"
-set -g @ram_percentage_format "%.0f%%"
+set -g @cpu_percentage_format "%2.0f%%"
+set -g @ram_percentage_format "%2.0f%%"
 set -g @ram_used_format "%.0fG"
+set -g @tmux-network-bandwidth-padding 7
 
 #=======================================================================
 # Display
 #=======================================================================
-
 
 tmux_conf_new_window_retain_current_path=true
 
@@ -523,11 +524,11 @@ tmux_conf_theme_right_separator_main='\uE0B2'
 tmux_conf_theme_right_separator_sub='\uE0B3'
 
 tmux_conf_battery_bar_length="5"
-tmux_conf_battery_status_charging='󱊥'
+tmux_conf_battery_status_charging='󱊦'
 tmux_conf_battery_status_discharging='󱊢'
 
 tmux_conf_theme_status_left=" 󱂬 #S "
-tmux_conf_theme_status_right=" #{prefix}#{mouse}#{pairing}#{synchronized} 󰻠 #{cpu_percentage} , 󰍛 #{ram_used} , #{?battery_status,#{battery_status},}#{?battery_percentage, #{battery_percentage},} , 󱑎 %R , 󰸘 %d %b |  #{hostname_full} "
+tmux_conf_theme_status_right=" #{prefix}#{mouse}#{pairing}#{synchronized}#{network_bandwidth} , 󰻠 #{cpu_percentage} , 󰍛 #{ram_used}#{?battery_status, ,}#{?battery_status, #{battery_status},}#{?battery_percentage, #{battery_percentage},} , 󱑎 %R , 󰸘 %d %b |  #{hostname_full} "
 tmux_conf_theme_status_right_attr="none,bold,none"
 
 tmux_conf_theme_terminal_title="󱂬  #S ● #I #W"
