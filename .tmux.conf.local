@@ -478,17 +478,15 @@ set -g prefix C-a
 bind C-a send-prefix
 
 # support true color
-set -g default-terminal screen-256color
-set-option -ga terminal-overrides ",*256col*:Tc"
+set -g default-terminal "tmux-256color"
+set -ga terminal-overrides ",*256col*:Tc"
+set -as terminal-features ",*256col*:RGB"
 
 # set unlimited history
 set -g history-limit 999999999
 
 # copy to clipboard when yank
 tmux_conf_copy_to_os_clipboard=true
-
-# set italic
-set -g default-terminal "tmux-256color"
 
 # reset display-panes shortcut
 unbind q
@@ -506,15 +504,19 @@ bind s choose-tree -s -O name
 # Plugins
 #=======================================================================
 
-set -g @plugin 'tmux-plugins/tmux-resurrect'
-set -g @plugin 'shiyanhui/tmux-cpu'
-set -g @plugin 'shiyanhui/tmux-network-bandwidth'
+# disable tpm update on launch
+tmux_conf_update_plugins_on_launch=false
 
 set -g status-interval 1
+
 set -g @cpu_percentage_format "%2.0f%%"
 set -g @ram_percentage_format "%2.0f%%"
 set -g @ram_used_format "%.0fG"
 set -g @tmux-network-bandwidth-padding 7
+
+set -g @plugin 'tmux-plugins/tmux-resurrect'
+set -g @plugin 'shiyanhui/tmux-cpu'
+set -g @plugin 'shiyanhui/tmux-network-bandwidth'
 
 #=======================================================================
 # Display
@@ -526,6 +528,8 @@ tmux_conf_theme_prefix="󰥻"
 
 tmux_conf_theme_window_status_last_fg="default"
 tmux_conf_theme_window_status_last_bg="default"
+tmux_conf_theme_window_status_format="#I #W"
+tmux_conf_theme_window_status_current_format="#I #W"
 
 tmux_conf_theme_left_separator_main='\uE0B0'
 tmux_conf_theme_left_separator_sub='\uE0B1'
@@ -540,4 +544,4 @@ tmux_conf_theme_status_left=" 󱂬 #S "
 tmux_conf_theme_status_right=" #{prefix}#{mouse}#{pairing}#{synchronized}#{network_bandwidth} , 󰻠 #{cpu_percentage} , 󰍛 #{ram_used}#{?battery_status, ,}#{?battery_status, #{battery_status},}#{?battery_percentage, #{battery_percentage},} , 󱑎 %R , 󰸘 %d %b |  #{hostname_full} "
 tmux_conf_theme_status_right_attr="none,bold,none"
 
-tmux_conf_theme_terminal_title="󱂬  #S ● #I #W"
+tmux_conf_theme_terminal_title="󱂬  #S  #I #W"
