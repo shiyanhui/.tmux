@@ -106,8 +106,9 @@ tmux_conf_theme_colour_17="#e4e4e4"   # white
 #ebcb8b orange
 #88c0d0 cyan
 #c8d0e0 white
+#353b49 background
 
-# custom theme
+# custom theme for onenord
 tmux_conf_theme_colour_1="#353b49"
 tmux_conf_theme_colour_2="#353b49"
 tmux_conf_theme_colour_3="#c8d0e0"
@@ -121,6 +122,21 @@ tmux_conf_theme_colour_13="#2e3440"
 tmux_conf_theme_colour_14="#353b49"
 tmux_conf_theme_colour_15="#353b49"
 tmux_conf_theme_colour_16="#88c0d0"
+
+# custom theme for monokai pro
+# tmux_conf_theme_colour_1="#273136"
+# tmux_conf_theme_colour_2="#273136"
+# tmux_conf_theme_colour_3="#f2fffc"
+# tmux_conf_theme_colour_4="#ffb270" # tab
+# tmux_conf_theme_colour_5="#ffb270"
+# tmux_conf_theme_colour_6="#2e3440"
+# tmux_conf_theme_colour_8="#273136"
+# tmux_conf_theme_colour_9="#7cd5f1" # session
+# tmux_conf_theme_colour_12="#f2fffc"
+# tmux_conf_theme_colour_13="#2e3440"
+# tmux_conf_theme_colour_14="#273136"
+# tmux_conf_theme_colour_15="#273136"
+# tmux_conf_theme_colour_16="#7cd5f1"
 
 # default theme (ansi)
 #tmux_conf_theme_colour_1="colour0"
