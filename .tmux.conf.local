@@ -507,7 +507,7 @@ tmux_conf_theme_status_left=" 󱂬 #S "
 tmux_conf_theme_status_right=" #{prefix}#{mouse}#{pairing}#{synchronized}#{network_bandwidth} , 󰻠 #{cpu_percentage} , 󰍛 #{ram_used} , 󱑎 %R , 󰸘 %d %b#{?battery_status, ,}#{?battery_status, #{battery_status},}#{?battery_percentage, #{battery_percentage},} |  #{hostname_full} "
 tmux_conf_theme_status_right_attr="none,bold,none"
 
-tmux_conf_theme_terminal_title="󱂬  #S"
+tmux_conf_theme_terminal_title="#S ∙ #I #W"
 
 # -- tpm -----------------------------------------------------------------------
 
